@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./loginStyle.css">
+    <script src="./js/login.js"></script>
+    <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex flex-container-card">
+        <div class="flex-col card-left">
+            <img src="./img/signin-image.jpg" alt="signin-image">
+            <a href="./signup.html"><p>Create an Account</p></a>
+        </div>
+        <div class="flex-col card-right">
+            <h1>Welcome Back,</h1>
+            <form class="flex-col" action="" method="POST">
+                <div class="username-container">
+                    <label for="username">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                
+                <div class="pass-container">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <i class="far fa-eye" id="togglePassword"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                
+                <div class="flex checkbox-item">
+                    <input type="checkbox">
+                    <p>Remember Me</p>
+                </div>
+                <input type="submit" name="sign in" value="Log In">
+            </form>
+            <div class="flex social-login">
+                <p>Or Log in with:</p>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://accounts.google.com"><i class="fab fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
