@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="./signupStyle.css">
-    <script src="./js/signup.js"></script>
+    <script src="./js/signup.js" ></script>
     <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,25 +18,29 @@
                     <label for="username">
                         <i class="fas fa-user"></i>
                     </label>
-                    <input type="text" placeholder="Your Name" required="">
+                    <input type="text" id="uname" placeholder="Your Name" required>
+                    <p class="err-username"></p>
                 </div>
                 <div class="email-container">
                     <label for="email">
                         <i class="fas fa-envelope"></i>
                     </label>
-                    <input type="email" name="email" id="email" required="" placeholder="Your Email">
+                    <input type="email" name="email" id="email" required placeholder="Your Email">
+                    <p class="err-email"></p>
                 </div>
                 <div class="pass-container">
                     <label for="password">
                         <i class="fas fa-lock"></i>
                     </label>
-                    <input type="password" required="" placeholder="Password">
+                    <input type="password" id="pass" required placeholder="Password">
+                    <p class="err-pass"></p>
                 </div>
                 <div class="pass-container">
                     <label for="password">
                         <i class="fas fa-lock"></i>
                     </label>
-                    <input type="password" required="" placeholder="Confirm Password">
+                    <input type="password" id="pass-confirm" required placeholder="Confirm Password">
+                    <p class="err-pass-no-match"></p>
                 </div>
                 <div class="flex checkbox-item">
                     <input type="checkbox">
