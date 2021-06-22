@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./loginStyle.css">
-    <script src="./js/login.js"></script>
+    
     <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +22,8 @@
                     <label for="username">
                         <i class="fas fa-user"></i>
                     </label>
-                    <input type="text" placeholder="Your Name">
+                    <input type="text" id="uname" placeholder="Your Name">
+                    <p class="err-name"></p>
                 </div>
                 
                 <div class="pass-container">
@@ -30,14 +31,15 @@
                         <i class="fas fa-lock"></i>
                     </label>
                     <i class="far fa-eye" id="togglePassword"></i>
-                    <input type="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password">
+                    <p class="err-pass"></p>
                 </div>
                 
                 <div class="flex checkbox-item">
                     <input type="checkbox">
                     <p>Remember Me</p>
                 </div>
-                <input type="submit" name="sign in" value="Log In">
+                <input type="submit" id="login" name="sign-in" value="Log In">
             </form>
             <div class="flex social-login">
                 <p>Or Log in with:</p>
@@ -47,6 +49,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="./js/login.js"></script>
 </body>
 </html>
