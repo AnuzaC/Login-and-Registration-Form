@@ -29,6 +29,10 @@ register.onclick = function(){
         register.disabled=true;
         document.querySelector('.err-checkbox').innerHTML="Please select this field";
     }
+    
+    else{
+        return true;
+    }
 };
 
 let userName= localStorage.setItem(uname);
