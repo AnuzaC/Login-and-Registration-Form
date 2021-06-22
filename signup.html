@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="./signupStyle.css">
+    <script src="./js/signup.js"></script>
+    <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex flex-container-card">
+        <div class="flex-col card-left">
+            <h1>Sign Up</h1>
+            <form class="flex-col" action="" method="POST">
+                <div class="username-container">
+                    <label for="username">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" placeholder="Your Name" required="">
+                </div>
+                <div class="email-container">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                    </label>
+                    <input type="email" name="email" id="email" required="" placeholder="Your Email">
+                </div>
+                <div class="pass-container">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" required="" placeholder="Password">
+                </div>
+                <div class="pass-container">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" required="" placeholder="Confirm Password">
+                </div>
+                <div class="flex checkbox-item">
+                    <input type="checkbox">
+                    <p>I agree all statements in <a href="#tos">Terms of service</a></p>
+                </div>
+                <input type="submit" name="sign_up" id="register" value="Register">
+            </form>
+        </div>
+        <div class="flex-col card-right">
+            <img src="./img/signup-image.jpg" alt="signin-image">
+            <a href="./login.html"><p>I am already a member</p></a>
+        </div>
+    </div>
+</body>
+</html>
