@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-card{
+    min-height: 100%;
+    justify-content: space-between;
+    margin: 2% 15%;
+    padding: 2% 7%;
+    border: .5px solid rgba(180, 179, 179, 0.473);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.514);
+    border-radius: 20px;
+}
+.card-left{
+    justify-content: space-around;
+}
+.card-right p{
+    text-decoration: underline;
+    padding: 5% 8% 5% 1%;
+}
+.checkbox-item p{
+    font-size: smaller;
+}
+.checkbox-item a{
+    text-decoration: underline;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    border-bottom: 1px solid #999;
+    padding: 5% 10%;
+    margin: 3% 1%;
+}
+label[for="username"], label[for="password"], label[for="email"]{
+    position: absolute;
+    top: 34%;
+    left: 3%;
+}
+.username-container, .pass-container, .email-container{
+    position: relative;
+}
+.fas{
+    color: rgba(128, 128, 128, 0.466);
+}
+input[type="submit"]{
+    background-color: #6dabe4;
+    color: white;
+    padding: 15px 39px;
+    margin-top: 10%;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(12, 154, 211);
+}
+.checkbox-item{
+    margin-top: 5%;
+}
