@@ -29,16 +29,13 @@ register.onclick = function(){
         register.disabled=true;
         document.querySelector('.err-checkbox').innerHTML="Please select this field";
     }
-    
     else{
-        return true;
+        register.disabled=false;
+        localStorage.setItem("uname",uname.value);
+        localStorage.setItem("email",email.value);
+        localStorage.setItem("pass",pass.value);
+        
+        window.location.replace("../login.html");
     }
+    return false;
 };
-
-let userName= localStorage.setItem(uname);
-let userEmail= localStorage.setItem(email);
-let userPass= localStorage.setItem(pass);
-
-
-
-
