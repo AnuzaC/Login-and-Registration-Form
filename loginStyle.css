@@ -9,7 +9,7 @@ body{
     background-color: rgba(165, 158, 158, 0.562);
 }
 a{
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
 }
 .flex{
@@ -31,9 +31,9 @@ a{
     border-radius: 20px;
     background-color: white;
 }
-.card-left p{
+.card-left span{
     text-decoration: underline;
-    padding: 5% 1% 5% 8%;
+    margin: 5% 1% 5% 8%;
 }
 .card-right{
     justify-content: space-around;
@@ -42,11 +42,14 @@ a{
     justify-content: space-around;
 } */
 input[type="text"], input[type="password"]{
+    border: none;
     border-bottom: 1px solid #999;
     padding: 5% 10%;
     margin: 3% 1%;
 }
-
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: none;
+}
 label[for="username"], label[for="password"]{
     position: absolute;
     top: 34%;
@@ -58,11 +61,20 @@ label[for="username"], label[for="password"]{
     right: 16%;
     cursor: pointer;
 }
+label[for="checkbox"]{
+    font-size: small;
+    margin-left: 2%;
+}
 .username-container, .pass-container{
     position: relative;
 }
 .social-login{
     justify-content: space-around;
+    margin-top: 10%;
+}
+
+.social-login p{
+    margin-top: 2%;
 }
 .fas{
     color: rgba(128, 128, 128, 0.466);
@@ -81,20 +93,21 @@ label[for="username"], label[for="password"]{
     font-size: x-large;
 }
 .fab:hover{
-    transform: scale(200%);
+    transform: scale(150%);
 }
-input[type="submit"]{
-    background-color: #6dabe4;
+.login{
+    border: none;
+    background-color: rgb(12, 154, 211);
     color: white;
     padding: 15px 39px;
     margin-top: 10%;
     border-radius: 5px;
-    width: 50%;
     cursor: pointer;
     font-size: 16px;
 }
-input[type="submit"]:hover{
-    background-color: rgb(12, 154, 211);
+.login:hover{
+    background-color: #6dabe4;
+    color: rgb(39, 38, 38);
 }
 .checkbox-item{
     margin-top: 5%;
