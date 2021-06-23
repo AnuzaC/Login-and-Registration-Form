@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="./signupStyle.css">
-    <script src="./js/signup.js" ></script>
+    
     <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="flex flex-container-card">
         <div class="flex-col card-left">
             <h1>Sign Up</h1>
@@ -33,6 +34,7 @@
                         <i class="fas fa-lock"></i>
                     </label>
                     <input type="password" id="pass" required placeholder="Password">
+                    <span id="pass-strength"></span>
                     <p class="err-pass"></p>
                 </div>
                 <div class="pass-container">
@@ -43,16 +45,18 @@
                     <p class="err-pass-no-match"></p>
                 </div>
                 <div class="flex checkbox-item">
-                    <input type="checkbox">
+                    <input type="checkbox" id="checkbox">
                     <p>I agree all statements in <a href="#tos">Terms of service</a></p>
+                    <p class="err-checkbox"></p>
                 </div>
                 <input type="submit" name="sign_up" id="register" value="Register">
             </form>
         </div>
         <div class="flex-col card-right">
             <img src="./img/signup-image.jpg" alt="signin-image">
-            <a href="./login.html"><p>I am already a member</p></a>
+            <span><a href="./login.html">I am already a member</a></span>
         </div>
     </div>
+    <script src="./js/signup.js" ></script>
 </body>
 </html>
