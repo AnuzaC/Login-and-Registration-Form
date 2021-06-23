@@ -15,10 +15,13 @@ login.onclick = function(){
         document.querySelector('.err-pass').innerHTML="Username and password donot match";
     }
 
-    else{
+    else if(nameCheck==username.value && passCheck==userpw.value){
         login.disabled=false;
         //window.open("../welcome.html");
         window.location.replace("../welcome.html");
+    }
+    else{
+        alert("You are not logged in.");
     }
     return false;
 };
