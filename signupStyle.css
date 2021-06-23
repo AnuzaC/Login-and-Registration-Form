@@ -41,14 +41,19 @@ a{
 }
 .checkbox-item p{
     font-size: smaller;
+    margin-left: 2%;
 }
 .checkbox-item a{
     text-decoration: underline;
 }
 input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
     border-bottom: 1px solid #999;
     padding: 5% 10%;
     margin: 3% 1%;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus{
+    outline: none;
 }
 label[for="username"], label[for="password"], label[for="email"]{
     position: absolute;
@@ -58,22 +63,32 @@ label[for="username"], label[for="password"], label[for="email"]{
 .username-container, .pass-container, .email-container{
     position: relative;
 }
+#pass-strength{
+    display: none;
+    text-align: center;
+}
 .fas{
     color: rgba(128, 128, 128, 0.466);
 }
 input[type="submit"]{
-    background-color: #6dabe4;
+    border: none;
+    background-color: rgb(12, 154, 211);
     color: white;
     padding: 15px 39px;
     margin-top: 10%;
     border-radius: 5px;
-    width: 50%;
     cursor: pointer;
     font-size: 16px;
 }
 input[type="submit"]:hover{
-    background-color: rgb(12, 154, 211);
+    background-color: #6dabe4;
+    color: rgb(39, 38, 38);
 }
 .checkbox-item{
     margin-top: 5%;
+}
+
+.card-right span{
+    text-decoration: underline;
+    margin-top: 26%;
 }
