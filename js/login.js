@@ -1,21 +1,26 @@
 const login= document.querySelector("#login");
 
 login.onclick = function(){
-    let nameCheck=localStorage.getItem(userName);
-    let passCheck=localStorage.getItem(userPass);
+    let nameCheck=localStorage.getItem(uname);
+    let passCheck=localStorage.getItem(pass);
 
-    let uname=document.querySelector('#uname');
-    let pass=document.querySelector('#pass');
+    let username= document.querySelector('#uname');
+    let userpw= document.querySelector('#pass');
+    let userremember= document.querySelector('#remember');
 
     document.querySelector('.err-pass').style.color ="red";
 
-    if (uname.value!=nameCheck.value || pass.value!=passCheck.value){
+    if (nameCheck!=username.value || passCheck!=userpw.value){
         login.disabled=true;
         document.querySelector('.err-pass').innerHTML="Username and password donot match";
     }
+
     else{
-        return true;
+        login.disabled=false;
+        window.location.href="../welcome.html";
+        //window.location.replace("../welcome.html");
     }
+    return false;
 };
 
 //Hide and Show Password
