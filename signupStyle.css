@@ -70,7 +70,7 @@ label[for="username"], label[for="password"], label[for="email"]{
 .fas{
     color: rgba(128, 128, 128, 0.466);
 }
-input[type="submit"]{
+button{
     border: none;
     background-color: rgb(12, 154, 211);
     color: white;
@@ -80,7 +80,7 @@ input[type="submit"]{
     cursor: pointer;
     font-size: 16px;
 }
-input[type="submit"]:hover{
+button:hover{
     background-color: #6dabe4;
     color: rgb(39, 38, 38);
 }
