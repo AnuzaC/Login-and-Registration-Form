@@ -47,6 +47,9 @@ input[type="text"], input[type="password"]{
     padding: 5% 10%;
     margin: 3% 1%;
 }
+.err-name, .err-pass{
+    font-size: small;
+}
 input[type="text"]:focus, input[type="password"]:focus{
     outline: none;
 }
