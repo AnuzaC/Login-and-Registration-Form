@@ -9,13 +9,23 @@ login.onclick = function(){
     let userremember= document.querySelector('#remember');
 
     document.querySelector('.err-pass').style.color ="red";
+    document.querySelector('.err-name').style.color ="red";
 
-    if (nameCheck!=username.value && passCheck!=userpw.value){
+    if(username.value.length==0){
         login.disabled=true;
-        document.querySelector('.err-pass').innerHTML="Username and password donot match";
+        document.querySelector('.err-name').innerHTML="Please enter username";
+    }
+    else if(userpw.value.length==0){
+        login.disabled=true;
+        document.querySelector('.err-pass').innerHTML="Please enter password";
     }
 
-    else if(nameCheck==username.value && passCheck==userpw.value){
+    else if (nameCheck!=username.value && passCheck!=userpw.value){
+        login.disabled=true;
+        document.querySelector('.err-pass').innerHTML="Username and password not found";
+    }
+
+    else if(username.length!=0 && userpw.length!=0 && nameCheck==username.value && passCheck==userpw.value){
         login.disabled=false;
         //window.open("../welcome.html");
         window.location.replace("../welcome.html");
